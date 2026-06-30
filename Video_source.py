@@ -1,9 +1,3 @@
-"""
-Video_source.py — Robust video capture abstraction.
-Supports webcam indices, video files, and RTSP/HTTP streams.
-Includes auto-reconnect for streams, frame buffering, and corrupt-frame filtering.
-"""
-
 import cv2
 import threading
 import time
@@ -13,12 +7,6 @@ from pathlib import Path
 
 
 class VideoSource:
-    """
-    Thread-safe video capture with optional background buffering.
-    Automatically detects source type from the provided identifier.
-    Skips corrupt or near-black frames so the detector never receives bad input.
-    """
-
     def __init__(self, source=0, buffer_size: int = 4, backend=None):
         self.source = source
         self.buffer_size = buffer_size
