@@ -1,25 +1,3 @@
-"""
-Main.py — YOLOv8 Real-Time Object Detection entry point.
-
-Usage examples:
-    python Main.py                          # webcam 0, default settings
-    python Main.py --source video.mp4       # video file
-    python Main.py --model yolov8s.pt       # larger, more accurate model
-    python Main.py --conf 0.60 --iou 0.50   # stricter thresholds
-    python Main.py --backend dshow          # Windows webcam fix
-    python Main.py --record                 # save annotated video + CSV
-
-Keyboard controls (also shown with H key at runtime):
-    Q        Quit
-    SPACE    Pause / Resume
-    R        Toggle recording
-    S        Save screenshot
-    +/-      Increase / Decrease confidence threshold
-    F/D      Increase / Decrease frame skip
-    0        Reset statistics
-    H        Toggle help overlay
-"""
-
 import argparse
 import sys
 import cv2
