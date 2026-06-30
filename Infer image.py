@@ -1,19 +1,3 @@
-"""
-Infer_image.py — Run YOLOv8 detection on one or more static images.
-
-Accuracy improvements over the original:
-  - Letterbox preprocessing (via Detector) preserves aspect ratio
-  - Bounding boxes mapped back to original image coords for correct output
-  - Skips corrupt/unreadable frames gracefully
-  - Saves per-image JSON summary alongside annotated images
-
-Usage:
-    python Infer_image.py image.jpg
-    python Infer_image.py img1.jpg img2.png --conf 0.55
-    python Infer_image.py *.jpg --output results/ --show
-    python Infer_image.py image.jpg --model yolov8s.pt   # more accurate model
-"""
-
 import argparse
 import json
 import sys
