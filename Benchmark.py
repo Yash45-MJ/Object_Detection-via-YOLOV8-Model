@@ -1,16 +1,3 @@
-"""
-Benchmark.py — Profile YOLOv8 inference speed across model sizes.
-
-Runs N frames of synthetic noise through each model using the same letterbox
-preprocessing path as the live detector, so results reflect real-world
-inference conditions rather than raw model throughput on arbitrary sizes.
-
-Usage:
-    python Benchmark.py
-    python Benchmark.py --models yolov8n.pt yolov8s.pt --frames 100
-    python Benchmark.py --models yolov8n.pt --input-size 640
-"""
-
 import argparse
 import time
 import numpy as np
