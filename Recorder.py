@@ -1,14 +1,3 @@
-"""
-Recorder.py — Optional detection logger and video recorder.
-Writes annotated video to disk and logs detections to CSV.
-
-Improvements:
-  - ISO-format timestamps in CSV for easy parsing
-  - Resolution mismatch guard (warns instead of silently distorting)
-  - session_id exposed as a property
-  - Graceful no-op if write() called before start()
-"""
-
 import cv2
 import csv
 import time
